@@ -1,0 +1,147 @@
+Delivered-To: singithatsuyyalas.13@gmail.com
+Received: by 2002:a9d:8c4:0:0:0:0:0 with SMTP id 62csp9997694otf;
+        Wed, 24 Jul 2019 01:17:41 -0700 (PDT)
+X-Received: by 2002:a9d:4546:: with SMTP id p6mr52060999oti.34.1563956261435;
+        Wed, 24 Jul 2019 01:17:41 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1563956261; cv=none;
+        d=google.com; s=arc-20160816;
+        b=Bqecw7EF6s0jofVNhht6EkaJfLbnS+T2t4c1Jf02s3kbPYkMeSYp4nTz6D/RXTG0th
+         kLE15pLGSogtlOuMtdoYvKL4OwM4HhyWB+pZRkVV8AMOACRzl+nvcPWnr9mZaeLGTfd0
+         oJFxbRRRxJQLapCnO5jUesCxkx0HbmkLdGZlVz/q+8qekWgsIZTFqzROr8dYiANOFVde
+         5Wyni5T0ciAb6UwaK5TJ1VHIOFPIaVz8tBpO6xHU4T+Ziq9z4tEK2My1EwJF6WMdfLHj
+         5yZi4AWa5qJifiXCRG4IlzwzU6ipXOPHzSk8n4TLT9SfddhiMwpEd+sB1Efr/LqcXEu+
+         MRng==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=qUt7VDX2oA2QEgzYVgvBllcQ7gQnGiBLi6jC3HO+kIk=;
+        b=olY0P9V0IKSBn9oBCC/Doer/soFzL04m7SSRF6mhNm0pnw+wqPl/RB5NFPEocHKd9q
+         3hUt9Hnp3Eyma3nEm37IAZ5cijA5qRabknG3sT6FtjMgC2YzebyNywqarjMM4OwzTD40
+         /o2+8S/NKSTTwkDP4YWcYF1frgvQEKVVVcZ4QZCPM73SwAWnbyuqhKRwSUGPiKblb7kL
+         dpgLerRDS8Eh/6Hy26TDN0qkZodLacDmirb7DwYm0ds6El8m0WkiZ5+vWH1vTpkLI90A
+         pumat9nS/IqVi5NpFFojyobDWj421CGzJ3MZwc8HC0QNXZ50hXqp23a5iTjUHEE7iL/6
+         JbDQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=Aof9uYu+;
+       spf=pass (google.com: domain of vchandana0711@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=vchandana0711@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <vchandana0711@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id h2sor20876353oif.162.2019.07.24.01.17.41
+        for <singithatsuyyalas.13@gmail.com>
+        (Google Transport Security);
+        Wed, 24 Jul 2019 01:17:41 -0700 (PDT)
+Received-SPF: pass (google.com: domain of vchandana0711@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=Aof9uYu+;
+       spf=pass (google.com: domain of vchandana0711@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=vchandana0711@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=qUt7VDX2oA2QEgzYVgvBllcQ7gQnGiBLi6jC3HO+kIk=;
+        b=Aof9uYu+WV8J925Vp/FyLLIpBMt5awXwRo/z9uIQv9FyZWcWgLJnCCItjIe6ybnnx4
+         hclqTXZg9+EcSKVVu8jMFT7EiSAVt7vNigGOh50bh62vrJ0X8Xo/IY9Pq5n+NFTtA7VS
+         l+URN4huAmazT7U+riXZhoqBaEOPoqSlyHXeiWwfwThTyxejaanLsZSkzCIc8J+c5Iw5
+         X54g1DQXOhAM4QrrhWP+HxYJlHLQROF7OFNQDPzlVk+bzl9++Rc41YFfAFYm0AL6VTbm
+         rMwRSDm2Ms7gu7bNhXoOOK2ytnww2KfLls+bweJdfAOV0zeFsYFnEwaMQ9o4bUUiWUxE
+         7edQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=qUt7VDX2oA2QEgzYVgvBllcQ7gQnGiBLi6jC3HO+kIk=;
+        b=TF5hu7C+uaLk6ZMuJkvys/ufIqTsgDGKUCzs2m77hPM6uFyvti9nOrNmexCZwfZhZH
+         ODB+ddD1/8sjG/hM/x91OEymg7KRJcpt5M73kMkP3E5NMyBh0zfzoxt9lE3GKoCKXBjR
+         ap5YSwHRzAG1l5+7z9ukHb8CEhu3b7JonCOJIj1U/kiRdX7czCZZG0jToUQqpROhuz4f
+         90LDzhXRm9gdOE6BVTUnjTfpkcOJ1wMw+ivlwREWbaIHCTUci3xDdhHNPXr8Si6PbBzX
+         EDV2h4lObccX8x5IbCPXt3hS+QZJl4a6ndlIyyXKZ2bJI0h+iPhD+oVybAr/hLxxouJg
+         93GQ==
+X-Gm-Message-State: APjAAAXgXG7fQPRKhlu3JTOkHX0BTboa0KHD2AQwxXDZe97H4DQQATFG
+	QbGbWxLGuTvS0BoBAT9smOmn8VXyv1OfJIc+w6CmfAbshpE=
+X-Google-Smtp-Source: APXvYqwMhS+sYynHaQW3l/WX+onxhQ04XcJTczr3cFXsJ7MHM3kjoRHppoMq/R+ZyjuNlo1bdSgYv71MihVda1sdfnE=
+X-Received: by 2002:aca:dd55:: with SMTP id u82mr38261207oig.68.1563956261023;
+ Wed, 24 Jul 2019 01:17:41 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 2002:a4a:5294:0:0:0:0:0 with HTTP; Wed, 24 Jul 2019 01:17:40
+ -0700 (PDT)
+From: Chandana Vuppala <vchandana0711@gmail.com>
+Date: Wed, 24 Jul 2019 13:47:40 +0530
+Message-ID: <CAGKw-Q0Ae6NjtMr=CqCQ-1N+fFSVVQ2D9H0w5TrQ4GaOixD6JQ@mail.gmail.com>
+Subject: stack using array
+To: singithatsuyyalas.13@gmail.com
+Content-Type: text/plain; charset="UTF-8"
+
+/*STACK USING ARRAY*/
+#include<stdio.h>
+#include<iostream>
+#include<stdlib.h>
+#define MAX 5
+int a[5];
+int top;
+using namespace std;
+class stack_using_array
+{
+ public:
+ void push();
+ void pop();
+ void display();
+ stack_using_array();
+};
+stack_using_array::stack_using_array()
+{
+  top=-1;
+}
+int main()
+{
+ stack_using_array obj;
+ int choice;
+ while(1)
+ {
+  cout<<"\t\t1.PUSH\n\t\t2.POP\n\t\t3.DISPLAY\n\t\t4.QUIT\n";
+  cout<<"Enter your choice\n";
+  cin>>choice;
+  switch(choice)
+  {
+   case 1:obj.push();
+          break;
+   case 2:obj.pop();
+          break;
+   case 3:obj.display();
+          break;
+   case 4:exit(1);
+   default:cout<<"Wrong choice\n";
+  }
+ }
+}
+void stack_using_array::push()
+{
+ int pushed_item;
+ if(top==(MAX-1))
+ cout<<"Stack overflow\n";
+ else
+ cout<<"Enter the item to be pushed into the stack:";
+ cin>>pushed_item;
+ top=top+1;
+ a[top]=pushed_item;
+}
+void stack_using_array::display()
+{
+ int i;
+ if(top==-1)
+ cout<<"Stack is empty\n";
+ else
+ {
+  cout<<"Stack elements:\n";
+  for(i=top;i>=0;i--)
+  cout<<a[i]<<"\n";
+ }
+}
+void stack_using_array::pop()
+{
+ if(top==-1)
+ cout<<"Stack underflow\n";
+ else
+ {
+  cout<<"Popped element is:\n"<<a[top];
+  top=top-1;
+ }
+}

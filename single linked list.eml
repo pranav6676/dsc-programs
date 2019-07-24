@@ -1,0 +1,298 @@
+Delivered-To: singithatsuyyalas.13@gmail.com
+Received: by 2002:a9d:8c4:0:0:0:0:0 with SMTP id 62csp9996715otf;
+        Wed, 24 Jul 2019 01:16:31 -0700 (PDT)
+X-Received: by 2002:a9d:72cb:: with SMTP id d11mr39284657otk.133.1563956191267;
+        Wed, 24 Jul 2019 01:16:31 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1563956191; cv=none;
+        d=google.com; s=arc-20160816;
+        b=OoBPqgCOKinRpDMvpp80ZnivxPwfPRKOsJd24cGiHeKjaAcUMABEicvMGvxpDAOsMX
+         t7KwTA7Oorbcm96gWuace3laz3PLbioryWitwzk/Zv8KZ6Dj7HihENJDaorsKoPXxL+8
+         z2GH3txIozjYLKrVf38mrL7iBtusO01i5P2q6Nf9vFBf/TyxS63p3KugKB6dRox01cRe
+         XimdZW3Wcc2twyZF45PFaUwyohosAwXFDOrXjguHdEAmPG5oLYf/l9rtT5yWG2MBxDZo
+         6FFDUPzafS2q7FWH+nWlC/kSXtZssewx938XxNN28TTa4LYIWfVhrkA0MbHDr+FUwXr5
+         tNUg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=XTakPr2el+XRQ6JOmRlCAOs7HlAFFgZRjcrzaqbrvzg=;
+        b=dbRNYAONvUqRgdrkmEnRG3FRHRJBVOLze9fgYOt9pF0SGAMw1jSGNoN8znc4ofBhQD
+         KO/ufCCMwNi2V1LSxulCuK20G0W+aMMC0Ouw1c6cwK7h0OjXSPwf+CNyWG12ET39Le7E
+         yt3nJt8OUgWx+Ebs+GkGGR/3GACxpJu7s/cCLOAoEY3TDunYrb8OVkXQrGW0qMOg4fvv
+         K5pq31G1/RVjUH1nB2oYArmxY9mIVMnY7VX/fx4Qi3hnTWDcUxhDYYNaQzP9iPfKxQPy
+         VIrFJCJz06lbFHfSIaSuvbNxOfc/9Q1AQmyznAQe1BKkUIaiVopn0QhUtrewVFJoW8Ax
+         O0aQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=pl4ggUHa;
+       spf=pass (google.com: domain of vchandana0711@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=vchandana0711@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <vchandana0711@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id z15sor23910715oth.181.2019.07.24.01.16.31
+        for <singithatsuyyalas.13@gmail.com>
+        (Google Transport Security);
+        Wed, 24 Jul 2019 01:16:31 -0700 (PDT)
+Received-SPF: pass (google.com: domain of vchandana0711@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=pl4ggUHa;
+       spf=pass (google.com: domain of vchandana0711@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=vchandana0711@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=XTakPr2el+XRQ6JOmRlCAOs7HlAFFgZRjcrzaqbrvzg=;
+        b=pl4ggUHaOBDQ4Q6KBVIAkVh7xV0jbIgkfmTtP2GooYw57qs83p2/k9jNRo1HJF0MBT
+         SOj5IMlOyORY1SXbURBx35mgoAxGr0YWNkM33l0yt9d1NhKHctS5zmxd8IKZRUN3Z49M
+         7cxj2MqnxHunsGvM3MA9Aji1lRBztEHbd+2HOq7Qbjd1d0ZNy4T0pVuXrdphAPBckO7T
+         J0UoUkyJit0YMvv+zVB22O1cFlWESUtrrsvNPCDpU2QRv5eR4BNOhfLSK34xswBepx75
+         hYojqk3ZOZxVNDLtpGJi0Lv7kM/hxnmE6v2vWJiGhYwUl5tojQR0/QYna+AoaEluo1qw
+         BTxQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=XTakPr2el+XRQ6JOmRlCAOs7HlAFFgZRjcrzaqbrvzg=;
+        b=M3JYA65CpFF8aiWz63QVUAHj91ak98MVqz06qxBO8udg7kq0uzees2viBWCXNP6J/H
+         J87m5b0RQPz1A6B/ep91Pi0gUlFDZWQkoGptKAac6GGO5bxyTAw8UfpQGv5NmdR0LLBx
+         x6J+UHZzA2jWxWSMmEOnD+rcjrxvCfrlAvLcDEvN7PXaFETkPQu2oRQEbWyAm8E9IpDl
+         c3G/SU1TlqOiCwhBLRnNbg4JTjvfuQtAivQy95aj13g8ToCAwuYe+I1T1E73NiEYCglx
+         7Tz3hTPkl+5ow5TbWFAKFSp25XZfyFsJbZwUsI0cTqbJz/dGi7lv3cBKXfleSGgIog0X
+         yv6w==
+X-Gm-Message-State: APjAAAU+9TNMVUVCOiRiOmxoRs0FC0jAAjjAFshInAEW9AUOa1yWxWZI
+	avbkRhUE/P89AfoXA7l8nG/HOFEiv2hDcAROEzOSgXR22nA=
+X-Google-Smtp-Source: APXvYqxsVJLaqLOHFqLJG2n+tzd3GG7bfBsZ9oLwo2uBZoz75wj2iswqZEderryuUPdatX3cIoNn2yrzsfZ/JUGOq7A=
+X-Received: by 2002:a9d:226c:: with SMTP id o99mr56974927ota.42.1563956190036;
+ Wed, 24 Jul 2019 01:16:30 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 2002:a4a:5294:0:0:0:0:0 with HTTP; Wed, 24 Jul 2019 01:16:29
+ -0700 (PDT)
+From: Chandana Vuppala <vchandana0711@gmail.com>
+Date: Wed, 24 Jul 2019 13:46:29 +0530
+Message-ID: <CAGKw-Q14YvduS4ckuvQvW5jJon5OkEKVvC-OTE2L3hVeijr4KA@mail.gmail.com>
+Subject: single linked list
+To: singithatsuyyalas.13@gmail.com
+Content-Type: text/plain; charset="UTF-8"
+
+/*SINGLE LINKED LIST*/
+#include<stdio.h>
+#include<iostream>
+#include<stdlib.h>
+using namespace std;
+class sll
+{
+ struct list
+ {
+  int data;
+  struct list *next;
+ }*head;
+ public:
+ typedef struct list node;
+ sll();
+ void create();
+ void insert();
+ void display();
+ int count();
+ int deletepos();
+ void insertatbeg();
+ void insertatmid();
+ void insertatend();
+ void search();
+};
+sll::sll()
+{
+ head=NULL;
+}
+int main()
+{
+ int ch,k,c;
+ sll obj;
+ do
+ {
+  cout<<"\n\tMAIN MENU\n";
+  cout<<"\t\t1.CREATE\n\t\t2.DISPLAY\n\t\t3.INSERT\n\t\t4.DELETEPOS\n\t\t5.COUNT\n\t\t6.SEARCH\n\t\t7.EXIT\n\t\t";
+  cout<<"Enter your choice\n";
+  cin>>ch;
+  switch(ch)
+  {
+   case 1:obj.create();
+          break;
+   case 2:obj.display();
+          break;
+   case 3:obj.insert();
+          break;
+   case 4:k=obj.deletepos();
+          cout<<"\n Deleted element from the position "<<k;
+          break;
+   case 5:c=obj.count();
+          cout<<"\nNo of elements in the list"<<c;
+          break;
+   case 6:obj.search();
+          break;
+   case 7:exit(0);
+  }
+ }while(ch>0&&ch<8);
+}
+void sll::create()
+{
+ node *temp,*p;
+ temp=new node;
+ cout<<"Enter the element\n";
+ cin>>temp->data;
+ if(head==NULL)
+ {
+  head=temp;
+  temp->next=head;
+ }
+ else
+ {
+  p=head;
+  while(p->next!=NULL)
+  p=p->next;
+  temp->next=NULL;
+  p->next=temp;
+ }
+}
+void sll::display()
+{
+ node *q;
+ q=head;
+ cout<<"\nElements in the list are\n";
+ while(q!=NULL)
+ {
+  cout<<"-"<<q->data;
+  q=q->next;
+ }	
+}
+int sll::count()
+{
+ node *p;
+ int c=0;
+ p=head;
+ while(p!=NULL)
+ {
+  p=p->next;
+  c++;
+ }
+ return (c);
+}
+void sll::search()
+{
+ int f=0,k;
+ node *p;
+ p=head;
+ cout<<"Enter the element you want to fin\n";
+ cin>>k;
+ while(p!=NULL)
+ {
+  if(p->data==k);
+  {
+   f=1;
+   cout<<"Element found\n";
+  }
+  p=p->next;
+ }
+ if(f==0)
+ {
+  cout<<"Element not found\n";
+ }
+}
+void sll::insert()
+{
+ int ch;
+ do
+ {
+  cout<<"\n\t\t1.INSERTATBEG\n\t\t2.INSERTATMID\n\t\t3.INSERTATEND\n";
+  cout<<"Enter the choice\n";
+  cin>>ch;
+  switch(ch)
+  {
+   case 1:insertatbeg();
+          break;
+   case 2:insertatmid();
+          break;
+   case 3:insertatend();
+          break;
+   default:break;
+  }
+ }while(ch>0&&ch<4);
+}
+void sll::insertatbeg()
+{
+ node *temp,*p;
+ temp=new node;
+ cout<<"Enter the inserted element\n";
+ cin>>temp->data;
+ temp->next=head;
+ head=temp;
+}
+void sll::insertatmid()
+{
+ node *temp,*p;
+ int key;
+ temp=new node;
+ cout<<"Enter the elements\n";
+ cin>>temp->data;
+ cout<<"Enter the key element\n";
+ cin>>key;
+ p=head;
+ while(p!=NULL)
+ {
+  if(p->data==key)
+  {
+   temp->next=p->next;
+   p->next=temp;
+  }
+  p=p->next;
+ }
+}
+void sll::insertatend()
+{
+ node *temp,*p;
+ temp=new node;
+ cout<<"Enter the element\n";
+ cin>>temp->data;
+ if(head==NULL)
+ {
+  temp->next=head;
+  head=temp;
+ }
+ else
+ {
+  p=head;
+  while(p->next!=NULL)
+  p=p->next;
+  temp->next=head;
+  p->next=temp;
+ }
+}
+int sll::deletepos()
+{
+ node *p;
+ int pos,i,k;
+ cout<<"\nEnter the position for deletion";
+ cin>>pos;
+ if(head!=NULL)
+ {
+  if(pos==1)
+  {
+   k=head->data;
+   head=head->next;
+   return (k);
+  }
+  else
+  {
+   i=2;
+   p=head;
+   while((p!=NULL)&&(i<pos))
+   {
+    p=p->next;
+    i++;
+   }
+   if(p!=NULL)
+   {
+    k=p->next->data;
+    p->next=p->next->next;
+    return (k);
+   }
+  }
+ }
+ else
+ cout<<"\n\tList is empty";
+}
